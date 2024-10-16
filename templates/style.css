@@ -1,0 +1,265 @@
+header{
+    background-color: #683611;
+    padding: 30px 258px 30px 258px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header a{
+    padding: 30px 45px 30px 45px;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.header :hover{
+    background-color: #4C2818;
+}
+
+.phone-number{
+    font-size: 20px;
+    color:white;
+    margin-left: 390px;
+}
+
+.content{
+    margin: 80px 280px 100px 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+    padding: 152px 366px 80px 366px;
+    background-image: url('/templates/source/img/titles/main.png');
+}
+
+.title{
+    margin-top: 75px;
+}
+
+.additionalTitle{
+    margin-top: 300px;
+    color: white;
+    width: 420px;
+    text-align: center;
+    font-size: 36px;
+    padding: 100px 0px 96px 0px;
+}
+
+.about_btn{
+    text-decoration: none;
+    font-size: 36px;
+    padding: 18px 36px 18px 36px;
+    width: 300px;
+    color: black;
+    background-color: white;
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 70px;
+    font-size: 48px;
+}
+
+.about_text{
+    font-size: 24px;
+    padding-top: 30px;
+    width: 1050px;
+    text-align: center;
+}
+
+.about_slogan{
+    font-size: 24px;
+    padding-top: 24px;
+    width: 1050px;
+    text-align: center;
+}
+
+.advantages{
+    font-size: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 70px;
+}
+
+.advantages_list{
+    width: 1400px;
+    padding-top: 40px;
+    font-size: 24px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.advantage{
+    padding-left: 100px;
+    padding-top: 50px;
+    width: 335px;
+    height: 117px;
+    flex-direction: row-reverse;
+    display: flex;
+}
+
+.advantage_text{
+    width: 218px;
+    text-align: center;
+}
+
+.greetingFrame{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 144px;
+    color: white;
+    background-image: url(/templates/source/img/titles/menu.png);
+    font-family: 'Kaushan Script';
+}
+
+.greetingFrame .additionalTitle{
+    font-size: 36px;
+    width: 730px;
+    margin: 0px;
+    padding-top: 55px;
+}
+
+.form-productions{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1300px;
+}
+
+.form-production{
+    font-size: 24px;
+}
+
+.catalog{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-color: black;
+    border-radius: 15px;
+    padding: 27px;
+    margin: 10px;
+    border: solid;
+    width: 250px;
+    height: 300px;
+}
+
+.card-image{
+    width: 200px;
+    height: 200px;
+}
+
+.card-name{
+    text-align: center;
+    padding-top: 20px;
+    text-wrap: wrap;
+    font-size: 20px;
+    font-weight: bold;
+    height: 46px;
+}
+
+.price{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    width: 250px;
+}
+
+.card-price{
+    font-size: 18px;
+}
+
+.explanaition{
+    width: 669px;
+    font-size: 40px;
+    text-align: center;
+    text-wrap: wrap;
+    margin-bottom: 75px;
+}
+
+.deliveryForm{
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+    font-size: 36px;
+}
+
+.form-delivery{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form-delivery-card{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 60px;
+}
+
+.form-delivery-card label{
+    height: 50px;
+}
+
+#wish{
+    height: 150px;
+    margin-bottom: 70px;
+    text-wrap: wrap;
+}
+
+#button{
+    padding: 15px 20px 15px 20px;
+}
+
+.rules{
+    text-align: center;
+    font-size: 36px;
+    width: 700px;
+    margin-bottom: 50px;
+}
+
+.deliveryDiscount{
+    font-size: 42px;
+}
+
+.vacancy-card{
+    display: flex;
+    flex-direction: column;
+    border: solid;
+    padding: 25px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 520px;
+}
+
+.vacancy-position{
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.vacancy-description{
+    font-size: 24px;
+}
+
+.salary{
+    font-size: 28px;
+    font-weight: bold;
+}

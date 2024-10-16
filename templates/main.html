@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="templates/normilize.css">
+    <link rel="stylesheet" href="templates/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <title>Plushky & Vatrushky</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <a href="/">Главная</a>
+            <a href="/production">Продукция</a>
+            <a href="/delivery">Доставка</a>
+            <a href="/vacancies">Вакансии</a>
+        </div>
+        <div class="phone-number">
+            +7(924)123-45-67
+        </div>
+    </header>
+
+    <div class="wrapper">
+        {% block content %}
+        {% endblock %}
+    </div>
+</body>
+</html>

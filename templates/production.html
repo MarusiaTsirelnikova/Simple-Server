@@ -1,0 +1,54 @@
+{% extends 'main.html' %}
+
+{% block content %}
+    <div class="greetingFrame">
+        <div class="title">
+            Our Menu
+        </div>
+        <div class="additionalTitle">
+            МЫ РАБОТАЕМ ТОЛЬКО С ПРОДУКТАМИ НАИЛУЧШЕГО КАЧЕСТВА
+        </div>
+    </div>
+    <div class="content">
+        <form action="" method="get" class="form-productions">
+            <div class="form-production">
+                <input type="submit" name="product" value="Хлеб" />
+            </div>
+            <div class="form-production">
+                <input type="submit" name="product" value="Выпечка" />
+            </div>
+            <div class="form-production">
+                <input id="confi" type="submit" name="product" value="Кондитерские изделия" />
+            </div>
+            <div class="form-production">
+            <input type="submit" name="product" value="Торты на заказ" />
+            </div>
+        </form>
+        <div class="catalog">
+            {% for product in production %}
+                <div class="card">
+                    {% if product.category == "Хлеб" %}
+                        <img class="card-image" src="/templates/source/img/production/bread.png">
+                    {% elif product.category == "Выпечка" %}
+                        <img class="card-image" src="templates/source/img/production/bakery.png">
+                    {% elif product.category == "Торты на заказ" %}
+                        <img class="card-image" src="templates/source/img/production/cake.png">
+                    {% else %}
+                        <img class="card-image" src="templates/source/img/production/confectionery.png">
+                    {% endif %}
+                    <div class="card-name">
+                        {{ product.name }}
+                    </div>
+                    <div class="price">
+                        <div class="card-price-title">
+                            Цена:
+                        </div>
+                        <div class="card-price">
+                            {{ product.price }}
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

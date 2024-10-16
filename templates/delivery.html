@@ -1,0 +1,44 @@
+{% extends 'main.html' %}
+
+{% block content %}
+    <div class="greetingFrame">
+        <div class="title">
+            Delivery
+        </div>
+        <div class="additionalTitle">
+            ВКУСНАЯ ВЫПЕЧКА И КОНДИТЕРСКИЕ ИЗДЕЛИЯ С ДОСТАВКОЙ ДО ДВЕРИ
+        </div>
+    </div>
+    <div class="content">
+        <div class="explanaition">
+            Заполните форму, <br/> чтобы мы могли с Вами связаться
+        </div>
+        <div class="deliveryForm">
+            <form action="" method="post" class="form-delivery">
+                <div class="form-delivery-card">
+                  <label for="name"> Имя: </label>
+                  <input type="text" name="name" id="name" required />
+                </div>
+                <div class="form-delivery-card">
+                  <label for="tel"> Номер телефона: </label>
+                  <input type="tel" name="tel" id="tel" placeholder="79241234567" pattern="[0-9]{11}" required />
+                </div>
+                <div class="form-delivery-card">
+                    <label for="wish"> Пожелания: </label>
+                    <input type="text" name="wish" id="wish" required />
+                  </div>
+                <div class="form-delivery-card">
+                  <input type="submit" value="Subscribe!" id="button"/>
+                </div>
+            </form>
+        </div>
+        <div class="rules">
+            Заказ принимаем с 9.30 до 18.00. 
+            Время изготовление заказа максимум 3 часа.
+        </div>
+        <div class="deliveryDiscount">
+            При заказе от 2 000 руб. - доставка БЕСПЛАТНАЯ.
+        </div>
+    </div>
+    
+{% endblock %}

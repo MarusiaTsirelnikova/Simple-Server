@@ -1,0 +1,34 @@
+{% extends 'main.html' %}
+
+{% block content %}
+    <div class="greetingFrame">
+        <div class="title">
+            Vacancies
+        </div>
+        <div class="additionalTitle">
+            В НАШЕЙ КОМАНДЕ ЕСТЬ МЕСТО ДЛЯ КАЖДОГО
+        </div>
+    </div>
+    <div class="content">
+        {% for vacancy in vacancies %}
+            <div class="vacancy-card">
+                <div class="vacancy-position">
+                    {{ vacancy.position }}
+                </div>
+                <div class="vacancy-description">
+                    <ul>
+                        {% for skill in vacancy.skills %}
+                            <li class="vacancy-skill">
+                                {{ skill.skill }}
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div class="salary">
+                    {{ vacancy.salary }}
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+
+{% endblock %}

@@ -1,0 +1,39 @@
+{% extends 'main.html' %}
+
+{% block content %}
+    <div class="content-about">
+        <div class="main">
+            <div class="additionalTitle">ПЕЧЕМСЯ О ВАС С 1994 ГОДА</div>
+            <a href="/production" class="about_btn">Перейти к каталогу</a>
+        </div>
+        <div class="content">
+            <div class="about">
+                О НАС
+                <div class="about_text">
+                    Мы производим эксклюзивные сорта хлеба по старинным русским рецептам, 
+                    с использованием самых современных технологий. Визитная карточка производства - 
+                    хлеб выпеченный в русских печах на березовых дровах. Именно сочетание русской 
+                    душевности и европейского оборудования делают продукцию особенной – теплой и родной.
+                </div>
+                <div class="about_slogan">
+                    Наш секрет производства – это любовь к своему делу и постоянное внимание к деталям.
+                </div>
+            </div>
+            <div class="advantages">
+                ПОЧЕМУ ВЫБИРАЮТ НАС
+                <div class="advantages_list">
+                    {% for advantage in advantages %}
+                        <div class="advantage">
+                            <div class="advantage_text">
+                                {{ advantage.text }}
+                            </div>
+                            <div class="advantage_img">
+                                <img src= "{{ advantage.img_source }}" />
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
